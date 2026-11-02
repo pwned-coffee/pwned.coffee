@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Email the kitchen instead
+    url: mailto:chef@pwned.coffee
+    about: Prefer email, or don't have a GitHub account? Send the ticket URL, what's wrong and a source link to chef@pwned.coffee.
+  - name: A security problem with pwned.coffee itself
+    url: https://pwned.coffee/.well-known/security.txt
+    about: Email security@pwned.coffee. Never post security problems with the site in a public issue.
+  - name: A vulnerability in someone else's product
+    url: https://www.cve.org/ResourcesSupport/ReportRequest
+    about: Report it to the vendor or a CVE Numbering Authority, not here.

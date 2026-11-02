@@ -1,0 +1,30 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "coffee.pwned/pwned-coffee",
+  "title": "pwned.coffee",
+  "description": "Live security incidents, updated hourly: fix status, fixed versions, lockfile and repo checks.",
+  "version": "1.0.0",
+  "websiteUrl": "https://pwned.coffee/mcp",
+  "icons": [
+    {
+      "src": "https://pwned.coffee/favicon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "any"
+      ]
+    },
+    {
+      "src": "https://pwned.coffee/icon-192.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "192x192"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://pwned.coffee/mcp"
+    }
+  ]
+}

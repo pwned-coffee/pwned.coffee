@@ -1,0 +1,5 @@
+# Never commit registry keys or tokens
+*.pem
+key.pem
+.mcpregistry_*
+mcp-registry-auth

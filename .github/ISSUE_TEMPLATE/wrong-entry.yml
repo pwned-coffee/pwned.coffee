@@ -1,0 +1,33 @@
+name: Wrong entry
+description: A ticket on pwned.coffee has a wrong fix status, fixed version, product, CVE, tag or summary, or an incident is missing.
+title: "[Wrong entry] "
+labels: ["wrong-entry"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for checking our work. Every fix status on pwned.coffee has to come from a source we store and link, so the most useful report is one that includes **the source that says otherwise**.
+        Issues are public. Don't post details of a vulnerability that hasn't been disclosed yet: report it to the vendor. If the problem is with pwned.coffee itself, email security@pwned.coffee.
+  - type: input
+    id: ticket
+    attributes:
+      label: Ticket URL or CVE id
+      description: The pwned.coffee ticket (https://pwned.coffee/i/...) or the CVE or GHSA id.
+      placeholder: https://pwned.coffee/i/... or CVE-2026-12345
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What's wrong?
+      description: What the ticket says, and what it should say. For example "Fix status says no fix yet, but 2.4.1 fixes it", "wrong product", "missing CVE" or "wrong stack tag".
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source link
+      description: A link that backs the correction, such as the vendor advisory, CVE record, GitHub advisory, release notes or distro tracker. A news article helps us find it, but a fix status can only come from a vendor or record source.
+      placeholder: https://...
+    validations:
+      required: true
